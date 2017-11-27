@@ -43,7 +43,7 @@ Or you can use custom build on your ARM (Raspberry PI) device.
 ```shell
 git clone git@github.com:Budry/cadvisor-arm.git
 cd cadvisor-arm
-sh update.sh <cadvisor tag> <image name> <image tag>
+docker build -t <image name> .
 docker run \
   --volume=/:/rootfs:ro \
   --volume=/var/run:/var/run:rw \
