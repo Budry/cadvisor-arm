@@ -10,4 +10,3 @@ RUN git clone --branch ${CADVISOR_VERSION} https://github.com/google/cadvisor.gi
 WORKDIR /go/src/github.com/google/cadvisor
 
 RUN make build
-RUN ls -la
