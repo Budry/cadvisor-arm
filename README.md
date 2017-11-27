@@ -19,7 +19,7 @@ This package compile official [google/cadvisor](https://github.com/google/cadvis
 
 ### With Docker
 
-The best (and recommended) way how to use this package is as (Docker image)[https://hub.docker.com/r/budry/cadvisor-arm/].
+The best (and recommended) way how to use this package is as [Docker image](https://hub.docker.com/r/budry/cadvisor-arm/).
 
 ```shell
 docker run \
