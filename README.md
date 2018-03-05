@@ -21,10 +21,10 @@ This package compile official [google/cadvisor](https://github.com/google/cadvis
 
 #### Supported tags and respective `Dockerfile` links
 
-**NOTE:** Tag corresponds to the version of haas-proxy
+**NOTE:** Tag corresponds to the version of cAdvisor
 
-* `0.29.0`, `latest` - [(Dockerfile)](https://github.com/Budry/docker-cz-nic-haas/blob/v0.29.0/Dockerfile)
-* `0.28.3` - [(Dockerfile)](https://github.com/Budry/docker-cz-nic-haas/blob/v0.28.3/Dockerfile)
+* `0.29.0`, `latest` - [(Dockerfile)](https://github.com/Budry/cadvisor-arm/blob/v0.29.0/Dockerfile)
+* `0.28.3` - [(Dockerfile)](https://github.com/Budry/cadvisor-arm/blob/v0.28.3/Dockerfile)
 
 
 The best (and recommended) way how to use this package is as [Docker image](https://hub.docker.com/r/budry/cadvisor-arm/).
