@@ -44,6 +44,24 @@ docker run \
 
 I trying update build of this package as soon as possible for each [google/cadvisor](https://github.com/google/cadvisor) update, but when you need more actual version I recommend you use custom build.
 
+### Docker Compose Example
+
+```yml
+version: '3'
+
+services:
+  cadvisor:
+    image: budry/cadvisor-arm
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys
+      - /var/lib/docker/:/var/lib/docker:ro
+      - /dev/disk/:/dev/disk:ro
+    ports:
+      - 8080:8080
+```
+
 ## Custom build
 
 Or you can use custom build on your ARM (Raspberry PI) device.
