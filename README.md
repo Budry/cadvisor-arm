@@ -23,7 +23,8 @@ This package compile official [google/cadvisor](https://github.com/google/cadvis
 
 **NOTE:** Tag corresponds to the version of cAdvisor
 
-* `0.29.0`, `latest` - [(Dockerfile)](https://github.com/Budry/cadvisor-arm/blob/v0.29.0/Dockerfile)
+* `0.30.2`, `latest` - [(Dockerfile)](https://github.com/Budry/cadvisor-arm/blob/v0.30.2/Dockerfile)
+* `0.29.0` - [(Dockerfile)](https://github.com/Budry/cadvisor-arm/blob/v0.29.0/Dockerfile)
 * `0.28.3` - [(Dockerfile)](https://github.com/Budry/cadvisor-arm/blob/v0.28.3/Dockerfile)
 
 
