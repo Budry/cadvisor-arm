@@ -1,0 +1,6 @@
+arch: arm64
+language: c
+compiler: gcc
+services:
+  - docker
+script: docker build -t thedavis/cadvisor-arm:latest -f Dockerfile .
