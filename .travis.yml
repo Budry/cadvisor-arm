@@ -3,4 +3,4 @@ services:
   - docker
 script:
   - docker run --rm --privileged multiarch/qemu-user-static:register --reset
-  - docker build -t thedavis/cadvisor-arm:latest -f .
+  - docker build -t thedavis/cadvisor-arm:latest .
