@@ -1,6 +1,6 @@
-arch: arm32
-language: c
-compiler: gcc
+sudo: required
 services:
   - docker
-script: docker build -t thedavis/cadvisor-arm:latest -f Dockerfile .
+script:
+  - docker run --rm --privileged multiarch/qemu-user-static:register --reset
+  - docker build -t thedavis/cadvisor-arm:latest -f .
