@@ -1,6 +1,6 @@
 # cAdvisor ARM build
 
-cAdvisor docker image build for ARM devices (for example: Raspberry PI).
+cAdvisor docker image build for ARMv7 devices (for example: Raspberry PI 4b+).
 
 This package is based on official [google/cadvisor](https://github.com/google/cadvisor)
 
@@ -13,7 +13,7 @@ This package is based on official [google/cadvisor](https://github.com/google/ca
 
 ## How it works
 
-This package compile official [google/cadvisor](https://github.com/google/cadvisor) package on Raspberry PI with `arm32v7/golang` docker image and build [google/cadvisor](https://github.com/google/cadvisor) as `arm32v6/alpine` image.
+This package compiles the official [google/cadvisor](https://github.com/google/cadvisor) package on Raspberry PI with `arm32v7/golang` docker image and build [google/cadvisor](https://github.com/google/cadvisor) as `arm32v7/debian-slim` image.
 
 ## How to use
 
