@@ -14,7 +14,7 @@ WORKDIR /go/src/github.com/google/cadvisor
 RUN make build
 
 # Image for usage
-FROM arm32v7/debian
+FROM arm32v7/debian-slim
 
 MAINTAINER Ondřej Záruba <info@zaruba-ondrej.cz> (https://zaruba-ondrej.cz)
 
