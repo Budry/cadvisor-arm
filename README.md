@@ -23,12 +23,10 @@ This package compile official [google/cadvisor](https://github.com/google/cadvis
 
 **NOTE:** Tag corresponds to the version of cAdvisor
 
-* `0.30.2`, `latest` - [(Dockerfile)](https://github.com/Budry/cadvisor-arm/blob/v0.30.2/Dockerfile)
-* `0.29.0` - [(Dockerfile)](https://github.com/Budry/cadvisor-arm/blob/v0.29.0/Dockerfile)
-* `0.28.3` - [(Dockerfile)](https://github.com/Budry/cadvisor-arm/blob/v0.28.3/Dockerfile)
+* `0.35.0`, `latest` - [(Dockerfile)](https://github.com/Budry/cadvisor-arm/blob/v0.30.2/Dockerfile)
 
 
-The best (and recommended) way how to use this package is as [Docker image](https://hub.docker.com/r/budry/cadvisor-arm/).
+The best (and recommended) way how to use this package is as [Docker image](https://hub.docker.com/repository/docker/thedavis/cadvisor-arm).
 
 ```shell
 docker run \
@@ -52,7 +50,7 @@ version: '3'
 
 services:
   cadvisor:
-    image: budry/cadvisor-arm
+    image: dcorto/cadvisor-arm.git
     volumes:
       - /:/rootfs:ro
       - /var/run:/var/run:rw
@@ -68,7 +66,7 @@ services:
 Or you can use custom build on your ARM (Raspberry PI) device.
 
 ```shell
-git clone git@github.com:Budry/cadvisor-arm.git
+git clone git@github.com:dcorto/cadvisor-arm.git
 cd cadvisor-arm
 docker build -t <image name> .
 docker run \
