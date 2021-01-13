@@ -50,7 +50,7 @@ version: '3'
 
 services:
   cadvisor:
-    image: dcorto/cadvisor-arm.git
+    image: thedavis/cadvisor-arm.git
     volumes:
       - /:/rootfs:ro
       - /var/run:/var/run:rw
