@@ -8,12 +8,12 @@ This package is based on official [google/cadvisor](https://github.com/google/ca
 
 * [How it works](#how-it-works)
 * [How to use](#how-to-use)
-  * [Docker](#docker)
+  * [Docker](#with-docker)
   * [Custom build](#custom-build)
 
 ## How it works
 
-This package compile official [google/cadvisor](https://github.com/google/cadvisor) package on Raspberry PI with `arm32v7/golang` docker image and build [google/cadvisor](https://github.com/google/cadvisor) as `arm32v6/alpine` image.
+This package compile official [google/cadvisor](https://github.com/google/cadvisor) package on Raspberry PI with `arm32v7/golang` docker image and build [google/cadvisor](https://github.com/google/cadvisor) as `arm32v7/debian` image.
 
 ## How to use
 
@@ -23,8 +23,7 @@ This package compile official [google/cadvisor](https://github.com/google/cadvis
 
 **NOTE:** Tag corresponds to the version of cAdvisor
 
-* `0.35.0`, `latest` - [(Dockerfile)](https://github.com/Budry/cadvisor-arm/blob/v0.30.2/Dockerfile)
-
+* `0.35.0`, `latest` - [(Dockerfile)](https://github.com/dcorto/cadvisor-arm/blob/v0.35.0/Dockerfile)
 
 The best (and recommended) way how to use this package is as [Docker image](https://hub.docker.com/repository/docker/thedavis/cadvisor-arm).
 
@@ -50,7 +49,7 @@ version: '3'
 
 services:
   cadvisor:
-    image: thedavis/cadvisor-arm.git
+    image: thedavis/cadvisor-arm
     volumes:
       - /:/rootfs:ro
       - /var/run:/var/run:rw
